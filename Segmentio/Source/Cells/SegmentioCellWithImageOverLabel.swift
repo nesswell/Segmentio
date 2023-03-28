@@ -28,14 +28,14 @@ class SegmentioCellWithImageOverLabel: SegmentioCell {
         // main constraints
         
         let segmentImageViewHorizontConstraint = NSLayoutConstraint.constraints(
-            withVisualFormat: "|-[imageContainerView]-|",
+            withVisualFormat: "|-0-[imageContainerView]-0-|",
             options: [],
             metrics: nil,
             views: views)
         NSLayoutConstraint.activate(segmentImageViewHorizontConstraint)
         
         let segmentTitleLabelHorizontConstraint = NSLayoutConstraint.constraints(
-            withVisualFormat: "|-[containerView]-|",
+            withVisualFormat: "|-0-[containerView]-0-|",
             options: [.alignAllCenterX],
             metrics: nil,
             views: views
