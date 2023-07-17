@@ -136,7 +136,7 @@ public struct SegmentioIndicatorOptions {
 
 public enum SegmentioPosition {
     case dynamic
-    case fixed(maxVisibleItems: Int)
+    case fixed(maxVisibleItems: Double)
 }
 
 // MARK: - Control options

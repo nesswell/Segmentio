@@ -520,7 +520,7 @@ open class Segmentio: UIView {
         
         switch segmentioOptions.segmentPosition {
         case .fixed(let maxVisibleItems):
-            let maxItems = maxVisibleItems > segmentioItems.count ? segmentioItems.count : maxVisibleItems
+            let maxItems = maxVisibleItems > CGFloat(segmentioItems.count) ? CGFloat(segmentioItems.count) : maxVisibleItems
             width = maxItems == 0 ? 0 : collectionViewWidth / CGFloat(maxItems)
 
         case .dynamic:
